@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Miranda | Computer Science Portfolio</title>
+    <meta name="description" content="Programming projects by Miranda: Code Node, Wireless Desk Ecosystem, and Forza Horizon Telemetry Dashboard.">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="navbar"><nav aria-label="Main navigation">
+        <div class="container nav-inner">
+            <a href="../index.html" class="logo" id="nav-logo">&lt;miranda<span>/</span>&gt;</a>
+            <ul class="nav-links">
+                <li><a href="projects.html" class="active" id="nav-projects">Projects</a></li>
+                <li><a href="../index.html" id="nav-about">About Me</a></li>
+                <li><a href="artwork.html" id="nav-artwork">Artwork</a></li>
+            </ul>
+        </div>
+    </nav></header>
+
+    <main class="container">
+        <header class="hero reveal" style="padding-bottom:3rem">
+            <span class="eyebrow">// projects</span>
+            <h1>Things I'm <span class="gradient-text">building.</span></h1>
+            <p class="lead">From developer tooling to embedded hardware to real-time data — each project starts with a problem I wanted solved.</p>
+        </header>
+
+        <article class="card project reveal" id="project-forza">
+            <div class="project-index">01</div>
+            <div>
+                <div class="project-top">
+                    <h2 style="font-size:1.6rem">Forza Horizon Telemetry Dashboard</h2>
+                    <span class="status">Prototype / Functional</span>
+                </div>
+                <p class="overview">A real-time telemetry application that receives and visualizes vehicle data from Forza Horizon, displaying live performance metrics to help players understand driving behavior, vehicle characteristics, and race performance.</p>
+                <p class="problem">Forza provides telemetry data, but the built-in tools are hard to analyze mid-race. This dashboard makes it easy to monitor performance and experiment with tuning changes.</p>
+                <div class="project-cols">
+                    <div><h4>Key Features</h4><ul>
+                        <li>Real-time telemetry updates</li><li>Speed, RPM &amp; gear display</li>
+                        <li>Throttle / brake visualization</li><li>Steering angle monitoring</li>
+                        <li>Network telemetry listener</li><li>Custom dashboard interface</li>
+                    </ul></div>
+                    <div><h4>Technical Components</h4><ul>
+                        <li>UDP network communication</li><li>Telemetry packet decoding</li>
+                        <li>Real-time data processing</li><li>Event-driven programming</li>
+                        <li>Data visualization</li><li>UI design</li>
+                    </ul></div>
+                </div>
+                <div class="tags"><span class="tag">JavaScript</span><span class="tag">Node.js</span><span class="tag">WebSockets</span><span class="tag">HTML/CSS</span><span class="tag">Forza Data Out</span></div>
+                <details class="more">
+                    <summary>Challenges &amp; what I learned</summary>
+                    <div class="more-body project-cols">
+                        <div><h4>Challenges</h4><ul>
+                            <li>Decoding telemetry packets correctly</li><li>Maintaining low-latency updates</li>
+                            <li>Managing rapidly changing data</li><li>Staying readable during gameplay</li>
+                        </ul></div>
+                        <div><h4>What I Learned</h4><p class="muted" style="font-size:.95rem">Hands-on experience with networking, real-time data processing, and dashboard design — plus reinforced concepts in event-driven programming and performance optimization.</p></div>
+                    </div>
+                </details>
+            </div>
+        </article>
+
+        <article class="card project reveal" id="project-codenode">
+            <div class="project-index">02</div>
+            <div>
+                <div class="project-top">
+                    <h2 style="font-size:1.6rem">Code Node</h2>
+                    <span class="status">Prototype / Functional</span>
+                </div>
+                <p class="overview">A visual code exploration tool that represents software projects as interconnected nodes, making large applications easier to understand and navigate.</p>
+                <p class="problem">Traditional file explorers don't clearly show relationships between functions, classes, and modules.</p>
+                <div class="project-cols">
+                    <div><h4>Key Features</h4><ul>
+                        <li>Interactive node graph</li><li>Function relationship visualization</li>
+                        <li>Code dependency tracking</li><li>Search and filtering</li>
+                    </ul></div>
+                    <div><h4>AI / Technical Components</h4><ul>
+                        <li>Static code analysis</li><li>Graph generation algorithms</li>
+                        <li>LLM-assisted code explanations</li>
+                    </ul></div>
+                </div>
+                <div class="tags"><span class="tag">Static Analysis</span><span class="tag">Graphs</span><span class="tag">LLMs</span></div>
+            </div>
+        </article>
+
+        <article class="card project reveal" id="project-wireless">
+            <div class="project-index">03</div>
+            <div>
+                <div class="project-top">
+                    <h2 style="font-size:1.6rem">Wireless Desk Ecosystem</h2>
+                    <span class="status">Ongoing concepts</span>
+                </div>
+                <p class="overview">A collection of wireless peripherals and communication systems designed to reduce desk clutter and simplify device connectivity.</p>
+                <p class="problem">Modern workstations require numerous wired accessories that create cable-management headaches.</p>
+                <div class="project-cols">
+                    <div><h4>Key Features</h4><ul>
+                        <li>Wireless USB bridge</li><li>Wireless drawing tablet connectivity</li>
+                        <li>Wireless MIDI support</li><li>Wireless button boxes</li>
+                    </ul></div>
+                    <div><h4>Technical Components</h4><ul>
+                        <li>Embedded systems</li><li>Wireless communications</li>
+                        <li>Hardware / software integration</li>
+                    </ul></div>
+                </div>
+                <div class="tags"><span class="tag">Embedded</span><span class="tag">Wireless</span><span class="tag">Hardware</span></div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <span>&copy; 2026 Miranda</span>
+            <a href="artwork.html">Psst — I make art too →</a>
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+AI-Assisted Coding
+Assignment: Personal Interest Website with an LLM
+Overview
+
+In this project, you will create a website about any subject that interests you — a hobby, a favorite book series, a local sports team, a place you love to travel, a recipe collection, or anything else you care about. Ideally, pick a subject where you already have some text and images you can use. That way, you can focus your time on working with a large language model (LLM) to develop the code for the website rather than creating content from scratch.
+
+You may use any LLM for this assignment — for example, ChatGPT, Claude, Google Gemini, Microsoft Copilot, GitHub Copilot, or another tool of your choice. Free tiers are completely fine. Chat-based tools in the browser and editor-integrated tools like GitHub Copilot are both acceptable; you may even use more than one. Whatever you choose, you are responsible for understanding, testing, and owning the final code.
+
+The purpose of this assignment is to practice using an LLM as a real development partner: prompting effectively, reviewing generated code, debugging problems, and iteratively improving a project from a blank folder to a finished site.
+
+Requirements
+
+Your website must include all of the following:
+
+At least three pages or major sections (e.g., Home, About, Gallery)
+A consistent navigation menu that links all pages together
+At least two images (your own, or images you have rights to use)
+A consistent visual design: shared colors, fonts, and layout across pages
+At least one interactive feature using JavaScript, such as:
+An image gallery or slideshow
+A contact or feedback form with validation
+A dark/light mode toggle
+An expandable FAQ section
+A responsive layout that works on both desktop and mobile screens
+Technical expectations
+
+Your code should demonstrate good practice and include:
+
+- Semantic HTML elements (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
+
+
+A shared external CSS file rather than inline styles
+Meaningful class names, comments where helpful, and consistent formatting
+Alt text for all images and readable color contrast
+A shared JavaScript file for any interactive features
+Procedure: step by step
+
+Follow these steps in order. Each step lists what to do, what to ask the LLM for, and when to commit your work. Commit to GitHub at the end of every step so you have a history of your progress.
+
+Step 1: Choose your topic and gather content
+
+Pick a subject you genuinely enjoy and can say something about.
+Collect your content before writing any code: draft or reuse text for each page, and gather at least two images you own or have permission to use.
+Create your project folder with a simple structure, for example:
+my-site/
+  index.html
+  about.html
+  gallery.html
+  css/style.css
+  js/script.js
+  images/
+
+
+Step 2: Choose your LLM and set up your tools
+
+Choose the LLM you will work with and sign in. If you are unsure which to pick, start with any major free chat-based tool — they are all capable of generating front-end code.
+Open your editor (VS Code recommended, but any editor works).
+Create a new GitHub repository, clone it locally (or push your project folder to it), and make an initial commit with your folder structure.
+Do a quick warm-up: ask your LLM a simple question (e.g., "What semantic elements should a personal website homepage include?") to get a feel for how it responds before the real work begins.
+Step 3: Plan your site before you prompt
+
+Sketch your pages on paper or in a notes file: what are your three or more pages/sections, and what goes on each one?
+Decide on a simple design direction: two or three colors, one or two fonts, and a general layout (header on top, content in the middle, footer at the bottom).
+Write a short site plan (5–10 lines). You will paste pieces of this plan into your prompts — specific plans produce much better code than vague requests.
+Step 4: Generate the initial page structure
+
+Ask the LLM to generate the HTML for your home page. Give it your site plan, not just a one-line request. Example prompt:
+"Create the HTML for the home page of a personal website about [your topic]. Use semantic elements (header, nav, main, section, footer). The nav should link to Home, About, and Gallery. Link an external stylesheet at css/style.css and a script at js/script.js. Include a placeholder section I can fill with my own text and one image with descriptive alt text."
+
+Read the generated code line by line. Check that file paths match your folder structure and that semantic elements are used correctly.
+Paste the code into html, open it in your browser, and confirm it renders.
+Commit your work.
+Step 5: Build the navigation and remaining pages
+
+Ask the LLM to generate the additional pages so the header and navigation are identical on every page. Example prompt:
+"Here is my index.html. Create about.html and gallery.html using the exact same header and nav so navigation is consistent. The About page should have two text sections; the Gallery page should have a grid of six image placeholders."
+
+Create each file, paste in your real content, and click through every nav link in the browser to confirm the pages connect.
+Commit your work.
+Step 6: Style the site with CSS
+
+Ask the LLM for a stylesheet based on your design plan. Example prompt:
+"Write a CSS file for my site. Colors: dark blue header, off-white background, orange accents. Use a sans-serif font. Style the nav as a horizontal bar with hover effects. Use flexbox or grid for layout, and add a media query so the layout stacks vertically on screens under 600px."
+
+Apply the stylesheet, then iterate: change one thing at a time (spacing, colors, font sizes) by asking focused follow-up prompts rather than regenerating the whole file.
+Open your browser's device toolbar and check the mobile layout as you go.
+Commit your work.
+Step 7: Implement your interactive feature
+
+Choose one feature from the requirements list (gallery/slideshow, form validation, dark/light toggle, or expandable FAQ).
+Describe the feature to the LLM in detail, including how it should behave. Example prompt:
+"Write JavaScript for a dark/light mode toggle. Add a button in the header. When clicked, it should switch the color scheme by toggling a class on the body element, and remember the choice using localStorage. Explain each part of the code."
+
+Add the code to your shared js/script.js file and test it in the browser. Open the console (F12) and check for errors.
+If something breaks, paste the exact error message and the relevant code back into the LLM and ask it to explain and fix the problem. Record this in your prompt log — debugging exchanges count.
+Commit your work.
+Step 8: Test, debug, and refine
+
+Work through every item in the Testing requirements section below.
+Fix each issue you find, using the LLM as a debugging partner: paste the broken code, describe the expected behavior, and describe what actually happens.
+Re-test after every fix. Do not assume a fix worked without checking.
+Commit your work.
+Step 9: Finalize and submit
+
+(Optional but encouraged) Deploy your site with GitHub Pages: in your repository, go to Settings → Pages, select your main branch, and save. Your site will be live at your GitHub Pages URL within a few minutes.
+Finish your prompt log, test report, and reflection (see below).
+Make a final commit and push. Submit the links and documents from the Submission checklist.
+AI-assisted workflow (required)
+
+The LLM is the focus of this assignment — documenting how you utilized it is part of the grade. As you proceed through the steps outlined above, make use of your chosen LLM to:
+
+Generate the initial page structure and boilerplate
+Create your navigation menu and page layout
+Style your pages with CSS (colors, fonts, spacing, responsive design)
+Implement your JavaScript interactive feature
+Debug and refactor code as issues come up
+Keep brief notes as you go. For at least three significant features, record the following in a prompt log. A "significant feature" could be your page structure, navigation, CSS design, responsive layout, or your JavaScript feature — debugging exchanges also count.
+
+Field
+
+What to record
+
+Feature
+
+What you were building or fixing
+
+LLM used
+
+Which tool (and roughly which mode, e.g., chat or editor autocomplete)
+
+Your prompt
+
+The actual prompt text you entered
+
+What it produced
+
+Brief summary of the generated code
+
+Your decision
+
+What you accepted, rejected, or modified — and why
+
+ 
+
+If you use an autocomplete-style tool, such as GitHub Copilot's inline suggestions, record the comment or code context you typed to elicit the suggestion instead of a chat prompt.
+
+Content guidelines
+
+Choose a subject you genuinely enjoy — enthusiasm shows in the final product
+Use text and images you own or have permission to use (no copied content from other websites)
+Content should be complete enough to feel like a real website: real paragraphs, real images, working links
+The focus is on the code and your AI workflow, not on writing essays — reuse existing content where possible
+Testing requirements
+
+Test your website and submit a short test report covering at least the items below. For each item, state what you tested, what happened, and any fixes you made:
+
+Navigation: click every link in the nav menu on every page — all pages load and link to each other
+Images: all images load correctly, and every <img> tag has alt text
+JavaScript feature: your interactive feature behaves as expected (test every state — e.g., toggle on and off, valid and invalid form input)
+Responsive layout: the site displays correctly at desktop width and on a phone-sized screen. In Chrome or Edge, press F12, click the device toolbar icon, and select a phone-sized device to check
+Console: no errors in the browser console (F12 → Console tab) on any page
+Links and paths: no broken links, missing files, or 404s in the Network tab
+Submission checklist
+
+Submit the following:
+
+A link to your GitHub repository containing all website files
+(Optional but encouraged) A link to the live site via GitHub Pages
+Your prompt log for at least three features, noting which LLM(s) you used
+Your test report

@@ -1,0 +1,74 @@
+﻿Code Node
+Overview
+A visual code exploration tool that represents software projects as interconnected nodes, making large applications easier to understand and navigate.
+Problem It Solves
+Traditional file explorers do not clearly show relationships between functions, classes, and modules.
+Key Features
+* Interactive node graph
+* Function relationship visualization
+* Code dependency tracking
+* Search and filtering
+AI/Technical Components
+* Static code analysis
+* Graph generation algorithms
+* LLM-assisted code explanations
+Current Status
+Concept
+________________
+
+
+Wireless Desk Ecosystem
+Overview
+A collection of wireless peripherals and communication systems designed to reduce desk clutter and simplify device connectivity.
+Problem It Solves
+Modern workstations often require numerous wired accessories that create cable management challenges.
+Key Features
+* Wireless USB bridge
+* Wireless drawing tablet connectivity
+* Wireless MIDI support
+* Wireless button boxes
+AI/Technical Components
+* Embedded systems
+* Wireless communications
+* Hardware/software integration
+Current Status
+Ongoing collection of concepts
+________________
+
+
+Forza Horizon Telemetry Dashboard
+Overview
+A real-time telemetry application that receives and visualizes vehicle data from Forza Horizon. The dashboard displays live vehicle performance metrics, helping players better understand driving behavior, vehicle characteristics, and race performance.
+Problem It Solves
+Forza Horizon provides telemetry data, but the built-in tools can be difficult to analyze during gameplay. This project presents that data in a more accessible format, making it easier to monitor vehicle performance and experiment with tuning changes.
+Key Features
+* Real-time telemetry updates
+* Vehicle speed monitoring
+* Engine RPM tracking
+* Gear position display
+* Throttle and brake input visualization
+* Steering angle monitoring
+* Network telemetry listener
+* Custom dashboard interface
+AI/Technical Components
+* UDP network communication
+* Real-time data processing
+* Data visualization
+* Event-driven programming
+* User interface design
+* Telemetry packet decoding
+Technologies Used
+* JavaScript
+* Node.js
+* WebSocket communication (if applicable)
+* HTML/CSS
+* Forza Data Out Protocol
+Challenges
+* Decoding incoming telemetry packets correctly
+* Maintaining low-latency updates
+* Managing large amounts of rapidly changing data
+* Designing a dashboard that remains readable during gameplay
+What I Learned
+This project provided hands-on experience with networking, real-time data processing, and dashboard design. It also reinforced concepts related to event-driven programming and performance optimization.
+Current Status
+Prototype / Functional Application
